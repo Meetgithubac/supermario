@@ -5,7 +5,7 @@
 int main()
 {
     // Create the game window (200x200 size with title "SFML works!")
-    sf::RenderWindow window(sf::VideoMode({ 1080, 600 }), "Super mario");       // setting game resolution.
+    sf::RenderWindow window(sf::VideoMode({ 1080, 480 }), "Super mario");       // setting game resolution.
 
     // Create a circle shape with radius 100 pixels
     //sf::CircleShape shape(100.f);
@@ -31,23 +31,25 @@ int main()
 
     // making background sprite.
     sf::Sprite backgroundSprite(backgroundimg);
-    backgroundSprite.setOrigin({ 100.f,100.f });
-
+    //sf::View gameView(sf::Vector2f(3376 / 2.f, 480 / 2.f), sf::Vector2f(3376.f, 480.f));
+    //backgroundSprite.setOrigin({0.f,backgroundimg.getSize().y - 240.f});
+	backgroundSprite.setScale({ 1.f,2.f });     // setting the scale of background image to fit the window.
+	backgroundSprite.setPosition({ 0.f,backgroundimg.getSize().y - 480.f });      // setting the position of background image to fit the window.
     // setting center of background.
         // 1. Get the size of the texture
-          sf::Vector2u textureSize = backgroundimg.getSize();
+        //  sf::Vector2u textureSize = backgroundimg.getSize();
 
-        // 2. Set the origin of the sprite to its center
-          backgroundSprite.setOrigin({ static_cast<float>(textureSize.x) / 2.f, static_cast<float>(textureSize.y) / 2.f });
-        // 3. Get the center of the window
-          sf::Vector2u windowSize = window.getSize();
-          sf::Vector2f windowCenter(static_cast<float>(windowSize.x) / 2.f, static_cast<float>(windowSize.y) / 2.f);
+        //// 2. Set the origin of the sprite to its center
+        //  backgroundSprite.setOrigin({ static_cast<float>(textureSize.x) / 2.f, static_cast<float>(textureSize.y) / 2.f });
+        //// 3. Get the center of the window
+        //  sf::Vector2u windowSize = window.getSize();
+        //  sf::Vector2f windowCenter(static_cast<float>(windowSize.x) / 2.f, static_cast<float>(windowSize.y) / 2.f);
 
         // 4. Set the position of the sprite to the center of the window
-          backgroundSprite.setPosition(windowCenter);
+          //backgroundSprite.setPosition(windowCenter);
 
     sf::Sprite mariosprite(mariotexture);
-    mariosprite.setPosition({ 10, 10 });
+    mariosprite.setPosition({ 10.f , backgroundimg.getSize().y - 44.f - 65.f});
 
     // Set the fill color of the circle to green
     //shape.setFillColor(sf::Color::Green);
