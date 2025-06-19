@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "supermario", "supermario.vcxproj", "{8DDA1478-479E-4517-8EAB-8BE7AB72E559}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DDA1478-479E-4517-8EAB-8BE7AB72E559}.Debug|x64.ActiveCfg = Debug|x64
+		{8DDA1478-479E-4517-8EAB-8BE7AB72E559}.Debug|x64.Build.0 = Debug|x64
+		{8DDA1478-479E-4517-8EAB-8BE7AB72E559}.Debug|x86.ActiveCfg = Debug|Win32
+		{8DDA1478-479E-4517-8EAB-8BE7AB72E559}.Debug|x86.Build.0 = Debug|Win32
+		{8DDA1478-479E-4517-8EAB-8BE7AB72E559}.Release|x64.ActiveCfg = Release|x64
+		{8DDA1478-479E-4517-8EAB-8BE7AB72E559}.Release|x64.Build.0 = Release|x64
+		{8DDA1478-479E-4517-8EAB-8BE7AB72E559}.Release|x86.ActiveCfg = Release|Win32
+		{8DDA1478-479E-4517-8EAB-8BE7AB72E559}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6605D9E-B842-4CE4-A028-B58E8C75C954}
+	EndGlobalSection
+EndGlobal
